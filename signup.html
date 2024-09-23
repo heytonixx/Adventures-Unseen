@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/signup.css">
+    <title>Sign Up - Adventures Unseen</title>
+    
+</head>
+<body>
+    <div class="container signup-container">
+        <div class="card">
+            <div class="card-img"></div>
+            <div class="card-body">
+                <h2>Sign Up</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+            <button type="button" class="btn btn-primary" onclick="handleSignUp(event)">Sign Up</button>
+            <button type="button" class="btn btn-secondary" onclick="handleLogin(event)">Back To Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/signup.js"></script>
+</html>
