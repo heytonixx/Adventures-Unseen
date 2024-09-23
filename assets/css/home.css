@@ -1,0 +1,24 @@
+.card {
+    margin-bottom: 20px;
+}
+.modal-body img {
+    width: 100%;
+}
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+}
+.star-rating .fa {
+    font-size: 1.5em;
+    color: #d3d3d3; /* Grey color for unselected stars */
+}
+.star-rating .fa.checked {
+    color: #f39c12; /* Gold color for selected stars */
+}
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+}

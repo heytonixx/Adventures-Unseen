@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/logo.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <title>Home - Adventures Unseen</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="img" src="../assets/imgs/logo.png" alt="Adventures Unseen"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center my-5">
+        <br><br>
+        <h1>Welcome to Adventures Unseen</h1>
+        <p>Discover hidden gems around the world. Explore breathtaking tourist spots you haven't heard of.</p>
+        <div class="row">
+            <!-- card1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/1f/67/e6/photo0jpg.jpg?w=1200&h=-1&s=1" class="card-img-top" alt="Lake Apo">
+                    <div class="card-body">
+                        <h5 class="card-title">Lake Apo</h5>
+                        <p class="card-text">A serene crater lake surrounded by lush forests.</p>
+
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="viewInfo('Lake Apo', 'Lake Apo is a stunning natural wonder located in the municipality of Malaybalay. Known for its crystal-clear waters and vibrant ecosystem, it’s a perfect spot for kayaking, fishing, and picnicking amid the picturesque scenery.', 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/1f/67/e6/photo0jpg.jpg?w=1200&h=-1&s=1')">View Info</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- card2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7pxCHV0F9E3axtL5UGmgwUlrrrCoWtAgVZw&s" class="card-img-top" alt="Dahilayan Adventure Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Dahilayan Adventure Park</h5>
+                        <p class="card-text">An adventure park offering thrilling outdoor activities.</p>
+
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="viewInfo('Dahilayan Adventure Park', 'Located in Manolo Fortich, Dahilayan Adventure Park features zip lines, a ropes course, and an alpine slide, all set against a backdrop of stunning pine trees. It’s ideal for families and adrenaline seekers alike.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7pxCHV0F9E3axtL5UGmgwUlrrrCoWtAgVZw&s')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCTYd4zJScc-aXR51oWyRJ8-83VTSVVExWg&s" class="card-img-top" alt="Bukidnon Forest Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Bukidnon Forest Park</h5>
+                        <p class="card-text">A lush sanctuary with diverse flora and fauna</p>
+
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="viewInfo('Bukidnon Forest Park', 'This forest park in Malaybalay is perfect for nature lovers and hikers. With well-maintained trails, picnic areas, and an array of wildlife, it offers a peaceful retreat for those looking to escape the city', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCTYd4zJScc-aXR51oWyRJ8-83VTSVVExWg&s')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*lBmTAnJXZnMFJRS2Xde-Zw.jpeg" class="card-img-top" alt="Kaamulan Festival">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaamulan Festival</h5>
+                        <p class="card-text">A vibrant cultural festival celebrating Bukidnon’s indigenous heritage.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Kaamulan Festival', 'Held annually in Malaybalay, the Kaamulan Festival showcases the rich traditions of Bukidnon’s indigenous groups through colorful parades, traditional dances, and local crafts, attracting visitors from across the region.', 'https://miro.medium.com/v2/resize:fit:1400/1*lBmTAnJXZnMFJRS2Xde-Zw.jpeg')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/proxy/AlTLvlP01KaPYq3VHQ8Vz0nhZ35EWXIVLoIor8hiArqMi7ynb0-jLqP21A5Jij_DSVQO2UvXtnoJvVVBUR4qRHhPVQfkIqTOX0hl9jTmMKZG9YTQ1X9a" class="card-img-top" alt="Monastery of Transfiguration">
+                    <div class="card-body">
+                        <h5 class="card-title">Monastery of Transfiguration</h5>
+                        <p class="card-text">A serene monastery set in a tranquil environment.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Monastery of Transfiguration', 'This beautiful monastery in Malaybalay is known for its stunning architecture and peaceful gardens. Visitors can attend mass, enjoy the views of the surrounding hills, and purchase homemade products from the monks.', 'https://thefilipinowanderer.wordpress.com/wp-content/uploads/2015/08/115.jpg?w=400')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://campsites.ph/uploads/images/campsite-194-communal-ranch-5299372021796fc85da192caa604e9cc.jpg" class="card-img-top" alt="Impasug-ong Eco-Tourism Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Impasug-ong Eco-Tourism Park</h5>
+                        <p class="card-text">A natural park offering adventure activities and eco-tours.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Impasug-ong Eco-Tourism Park', 'Located in Impasug-ong, this park provides visitors with opportunities for trekking, horseback riding, and bird watching. Its beautiful landscapes and rich biodiversity make it a must-visit for nature enthusiasts.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZs0wvxWfky0PiMJJhriBo5oOFr2H0rHzOdg&s')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card7 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.aseanbiodiversity.org/wp-content/uploads/2024/03/BANNER-1.jpg" class="card-img-top" alt="Mount Kitanglad Range Natural Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Mount Kitanglad Range Natural Park</h5>
+                        <p class="card-text">A protected area with breathtaking mountain views.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Mount Kitanglad Range Natural Park', 'This natural park is home to the majestic Mount Kitanglad, the second-highest peak in the Philippines. It’s ideal for hiking, camping, and bird watching, with trails that lead to spectacular panoramic views.', 'https://www.aseanbiodiversity.org/wp-content/uploads/2024/03/BANNER-1.jpg')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card8 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.mountains.com.ph/photo/1b6a5316-d0e5-4480-8dde-7de705aecbf3/conversions/a09bde733c76b9623d81e4cb81f58a43-landscape.jpg" class="card-img-top" alt="Mount Kalatungan Range">
+                    <div class="card-body">
+                        <h5 class="card-title">Mount Kalatungan <br>Range</h5>
+                        <p class="card-text">A challenging mountain range for experienced hikers.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Mount Kalatungan Range', 'Known for its rugged terrain and stunning biodiversity, Mount Kalatungan offers an adventurous experience for trekkers. The range is also a protected area, home to various endemic species.', 'https://wanderingfeetph.com/wp-content/uploads/2021/02/wp-1612625476783.jpg?w=1332&h=666&crop=1')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card9 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuEfct1Zo_BX06VLRoImiaozRkpAfmDQs9HA&s" class="card-img-top" alt="Asik-Asik Falls">
+                    <div class="card-body">
+                        <h5 class="card-title">Asik-Asik <br>Falls</h5>
+                        <p class="card-text">A breathtaking waterfall cascading from a rock wall.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Asik-Asik Falls', 'Asik-Asik Falls is renowned for its unique appearance, with water flowing from a moss-covered cliff. Accessible via a trek, this hidden gem offers a tranquil spot for relaxation and photography.', 'https://lifeseasiamagazine.com/wp-content/uploads/2014/12/jbp4818.jpg')">View Info</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/1f/67/e6/photo0jpg.jpg?w=1200&h=-1&s=1" class="card-img-top" alt="Lake Apo">
+                    <div class="card-body">
+                        <h5 class="card-title">Lake Apo</h5>
+                        <p class="card-text">A serene crater lake surrounded by lush forests.</p>
+
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="viewInfo('Lake Apo', 'Lake Apo is a stunning natural wonder located in the municipality of Malaybalay. Known for its crystal-clear waters and vibrant ecosystem, it’s a perfect spot for kayaking, fishing, and picnicking amid the picturesque scenery.', 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/1f/67/e6/photo0jpg.jpg?w=1200&h=-1&s=1')">View Info</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- card2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7pxCHV0F9E3axtL5UGmgwUlrrrCoWtAgVZw&s" class="card-img-top" alt="Dahilayan Adventure Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Dahilayan Adventure Park</h5>
+                        <p class="card-text">An adventure park offering thrilling outdoor activities.</p>
+
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="viewInfo('Dahilayan Adventure Park', 'Located in Manolo Fortich, Dahilayan Adventure Park features zip lines, a ropes course, and an alpine slide, all set against a backdrop of stunning pine trees. It’s ideal for families and adrenaline seekers alike.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7pxCHV0F9E3axtL5UGmgwUlrrrCoWtAgVZw&s')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCTYd4zJScc-aXR51oWyRJ8-83VTSVVExWg&s" class="card-img-top" alt="Bukidnon Forest Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Bukidnon Forest Park</h5>
+                        <p class="card-text">A lush sanctuary with diverse flora and fauna</p>
+
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="viewInfo('Bukidnon Forest Park', 'This forest park in Malaybalay is perfect for nature lovers and hikers. With well-maintained trails, picnic areas, and an array of wildlife, it offers a peaceful retreat for those looking to escape the city', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCTYd4zJScc-aXR51oWyRJ8-83VTSVVExWg&s')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*lBmTAnJXZnMFJRS2Xde-Zw.jpeg" class="card-img-top" alt="Kaamulan Festival">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaamulan Festival</h5>
+                        <p class="card-text">A vibrant cultural festival celebrating Bukidnon’s indigenous heritage.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Kaamulan Festival', 'Held annually in Malaybalay, the Kaamulan Festival showcases the rich traditions of Bukidnon’s indigenous groups through colorful parades, traditional dances, and local crafts, attracting visitors from across the region.', 'https://miro.medium.com/v2/resize:fit:1400/1*lBmTAnJXZnMFJRS2Xde-Zw.jpeg')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/proxy/AlTLvlP01KaPYq3VHQ8Vz0nhZ35EWXIVLoIor8hiArqMi7ynb0-jLqP21A5Jij_DSVQO2UvXtnoJvVVBUR4qRHhPVQfkIqTOX0hl9jTmMKZG9YTQ1X9a" class="card-img-top" alt="Monastery of Transfiguration">
+                    <div class="card-body">
+                        <h5 class="card-title">Monastery of Transfiguration</h5>
+                        <p class="card-text">A serene monastery set in a tranquil environment.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Monastery of Transfiguration', 'This beautiful monastery in Malaybalay is known for its stunning architecture and peaceful gardens. Visitors can attend mass, enjoy the views of the surrounding hills, and purchase homemade products from the monks.', 'https://thefilipinowanderer.wordpress.com/wp-content/uploads/2015/08/115.jpg?w=400')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://campsites.ph/uploads/images/campsite-194-communal-ranch-5299372021796fc85da192caa604e9cc.jpg" class="card-img-top" alt="Impasug-ong Eco-Tourism Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Impasug-ong Eco-Tourism Park</h5>
+                        <p class="card-text">A natural park offering adventure activities and eco-tours.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Impasug-ong Eco-Tourism Park', 'Located in Impasug-ong, this park provides visitors with opportunities for trekking, horseback riding, and bird watching. Its beautiful landscapes and rich biodiversity make it a must-visit for nature enthusiasts.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZs0wvxWfky0PiMJJhriBo5oOFr2H0rHzOdg&s')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card7 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.aseanbiodiversity.org/wp-content/uploads/2024/03/BANNER-1.jpg" class="card-img-top" alt="Mount Kitanglad Range Natural Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Mount Kitanglad Range Natural Park</h5>
+                        <p class="card-text">A protected area with breathtaking mountain views.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Mount Kitanglad Range Natural Park', 'This natural park is home to the majestic Mount Kitanglad, the second-highest peak in the Philippines. It’s ideal for hiking, camping, and bird watching, with trails that lead to spectacular panoramic views.', 'https://www.aseanbiodiversity.org/wp-content/uploads/2024/03/BANNER-1.jpg')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card8 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.mountains.com.ph/photo/1b6a5316-d0e5-4480-8dde-7de705aecbf3/conversions/a09bde733c76b9623d81e4cb81f58a43-landscape.jpg" class="card-img-top" alt="Mount Kalatungan Range">
+                    <div class="card-body">
+                        <h5 class="card-title">Mount Kalatungan <br>Range</h5>
+                        <p class="card-text">A challenging mountain range for experienced hikers.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Mount Kalatungan Range', 'Known for its rugged terrain and stunning biodiversity, Mount Kalatungan offers an adventurous experience for trekkers. The range is also a protected area, home to various endemic species.', 'https://wanderingfeetph.com/wp-content/uploads/2021/02/wp-1612625476783.jpg?w=1332&h=666&crop=1')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card9 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuEfct1Zo_BX06VLRoImiaozRkpAfmDQs9HA&s" class="card-img-top" alt="Asik-Asik Falls">
+                    <div class="card-body">
+                        <h5 class="card-title">Asik-Asik <br>Falls</h5>
+                        <p class="card-text">A breathtaking waterfall cascading from a rock wall.</p>
+                        
+                        <!-- Star Rating -->
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="viewInfo('Asik-Asik Falls', 'Asik-Asik Falls is renowned for its unique appearance, with water flowing from a moss-covered cliff. Accessible via a trek, this hidden gem offers a tranquil spot for relaxation and photography.', 'https://lifeseasiamagazine.com/wp-content/uploads/2014/12/jbp4818.jpg')">View Info</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Modal for displaying full info -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Info</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="" />
+                    <h5 id="modalTitle"></h5>
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Adventures Unseen. All rights reserved.</p>
+    </div>
+
+    <script>
+        function viewInfo(title, description, image) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalImage').src = image;
+            $('#infoModal').modal('show'); // Show the modal
+        }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
