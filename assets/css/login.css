@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+.card-img {
+    flex: 1;
+    background-image: url('../imgs/logo.png'); 
+    background-size: cover;
+    background-position: center;
+}
+.card-body {
+    flex: 1;
+}
