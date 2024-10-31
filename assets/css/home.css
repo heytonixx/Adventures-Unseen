@@ -22,3 +22,13 @@
     background-color: #343a40;
     color: #ffffff;
 }
+
+.navbar-brand{
+    margin-left: -60px;
+}
+.nav-item{
+ margin-left: 50px;
+}
+.navbar-collapse{
+    margin-right: -60px;
+}
